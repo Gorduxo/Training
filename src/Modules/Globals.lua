@@ -1,3 +1,4 @@
+local Lighting = game:GetService("Lighting")
 local self = {}
 
 --//Services
@@ -6,12 +7,15 @@ self.ReplicatedStorage = game:GetService("ReplicatedStorage")
 self.TweenService = game:GetService("TweenService")
 self.RunService = game:GetService("RunService")
 self.MarketplaceService = game:GetService("MarketplaceService")
+self.Lighting = game:GetService("Lighting")
 
 --//Functions
 if self.RunService:IsClient() then
 --/Client
 self.LocalPlayer = self.Players.LocalPlayer
 self.Character = self.LocalPlayer.Character or self.LocalPlayer.CharacterAdded:Wait()
+self.Humanoid = self.Character:WaitForChild("Humanoid")
+
 else
 
 --/Server
