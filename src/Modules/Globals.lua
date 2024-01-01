@@ -8,6 +8,8 @@ self.TweenService = game:GetService("TweenService")
 self.RunService = game:GetService("RunService")
 self.MarketplaceService = game:GetService("MarketplaceService")
 self.Lighting = game:GetService("Lighting")
+self.Workspace = game:GetService("Workspace")
+self.ReplicatedFirst = game:GetService("ReplicatedFirst")
 
 --//Functions
 if self.RunService:IsClient() then
