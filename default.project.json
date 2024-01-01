@@ -11,13 +11,20 @@
 
     "ServerScriptService": {
       "Server": {
-        "$path": "src/ServerScriptService"
+        "$path": "src/ServerScript_Service"
       }
     },
 
    "StarterGui":{
-    "ClientHandler":{
-      "$path": "src/StarterGui"
+    "Client":{
+      "$path": "src/Starter_Gui",
+      "$className" :"Folder"
+    }
+   },
+
+   "StarterPlayer":{
+    "StarterCharacterScripts":{
+      "$path":"src/StarterCharacter_scripts"
     }
    },
 
